@@ -4,7 +4,7 @@
 	* Plugin Name: Identity Document Verification
 	* Description: You can position this API anywhere on your website or inside a form and customise the look and feel to suit the style of your website.n Australia the Document Verification API will allow you to identify an individual though the submission of Driving Licence/Passport.
 	* Author: Identity Verification Services
-	* Version: 1.0
+	* Version: 2.0
 	* Author URI: https://profiles.wordpress.org/identity-verification-services
 	*/
 
