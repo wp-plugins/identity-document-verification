@@ -146,8 +146,8 @@
 		 $result=json_encode($response);
 		// echo "<pre>";print_r($response);
 		//exit;
-		$redirect_url=$api_credentials[0]->redirect_url;
-		$error_url=$api_credentials[0]->error_url;
+		$redirect_url=$configuration[0]->redirect_url;
+		$error_url=$configuration[0]->error_url;
 		include("thankyou.php");
 		exit;
 	}
