@@ -83,7 +83,7 @@
 					<tr>
 
 						<td>Identity Type</td>
-						<td><?php echo ucwords(str_replace("_"," ",$response->identity_type))?></td>
+						<td><?php echo ucwords(str_replace("_"," ",isset($response->identity_type)?$response->identity_type:$response->message))?></td>
 						
 					</tr>
 				</table>

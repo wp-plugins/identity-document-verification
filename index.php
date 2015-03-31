@@ -112,7 +112,7 @@
 	function identity_documentphoto_id_document_verification(){
 
 		global $wpdb;
-		$url='http://staging-api.identityverification.com/get_verified/get_auth_token/';
+		$url='https://api.identityverification.com/get_verified/get_auth_token/';
 		$configuration=$wpdb->get_results("select * from ".$wpdb->prefix ."identity_documentconfigurations");
 		$config_auth['client_id']=$configuration[0]->client_id;
 		$config_auth['client_secret']=$configuration[0]->client_secret;
@@ -139,7 +139,7 @@
 		$config_details['identity_type']=$_POST['identity_type'];
 		$config_details['country']=ucfirst(strtolower($_POST['country']));
 
-		 $photoid_verification_url='http://staging-api.identityverification.com/get_verified/identity_document';
+		 $photoid_verification_url='https://api.identityverification.com/get_verified/identity_document';
 		 
 		$response=identity_documentsendPostData_api($photoid_verification_url,json_encode($config_details));
 		
