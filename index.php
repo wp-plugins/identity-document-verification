@@ -94,6 +94,11 @@
 
 	function identity_documentscripts(){
 		wp_enqueue_script("jquery");
+	?>
+<script>
+	var site_url='<?php echo site_url()?>'
+</script/>
+	<?php
 		wp_register_script("identity_documentscripts",plugins_url("identity_documentscripts/validation.js", __FILE__));
 		wp_enqueue_script("identity_documentscripts");
 	}
