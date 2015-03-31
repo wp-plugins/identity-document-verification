@@ -45,7 +45,7 @@
 			</table>	
 		</form>
 		<?php
-		if($configuration[0]->client_id!=''){
+		if(count($configuration)>0 && $configuration[0]->client_id!=''){
 		?>
 			<div class="update-nag">Short Code : [IVS_IDENTITY_DOCUMENT_VERIFICATION]</div>
 		<?php
