@@ -68,7 +68,7 @@
 				<div>
 					<form action="<?php echo ($response->is_identity_document_verified=='1'?$redirect_url:$error_url)?>" method="post"  style ="text-align:center">
 						<input type="hidden" value='<?php echo json_encode($response)?>' name="response">
-						<button type="submit" >CONTINUE</button>>
+						<button type="submit" >CONTINUE</button>
 						
 						<br>
 						<br>
