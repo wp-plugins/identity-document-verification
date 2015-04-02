@@ -17,14 +17,14 @@
 			<?php
 			}if($response->status=='valid' && $response->is_identity_document_verified!=''){
 			?>
-			<table class="response-tbl" style="width:700px !important">
+			<table class="response-tbl" >
 					<!-- <tr>
 						<th> Parameter</th>
 						<th> Value</th>
 						<th> Status</th>
 					</tr> -->
 					<tr>
-						<td colspan="3" style="text-align:center"><b><?php echo $response->message?></b></td>
+						<td colspan="3" style="text-align:center"><h5><?php echo $response->message?></h5></td>
 					</tr>
 					<tr>
 
@@ -64,10 +64,12 @@
 						<td><?php echo ($response->is_identity_document_verified=='1'?'<img src="'.plugins_url("images/icons/tick_105.png" , __FILE__).'">':'<img src="'.plugins_url("images/icons/close-icon.gif" , __FILE__).'" style="width:19px;height:19px">')?></td>
 					</tr>
 				</table>
+					<br/>
 				<div>
 					<form action="<?php echo ($response->is_identity_document_verified=='1'?$redirect_url:$error_url)?>" method="post"  style ="text-align:center">
 						<input type="hidden" value='<?php echo json_encode($response)?>' name="response">
-						<input type="submit" value="Continue" style="text-align:center;background:rgb(78,159,216) !important;color:#fff !important;">
+						<button type="submit" >CONTINUE</button>>
+						
 						<br>
 						<br>
 					</form>
@@ -76,9 +78,9 @@
 			}else{
 
 			?>
-				<table class="response-tbl" style="width:700px !important">
+				<table class="response-tbl" >
 					<tr>
-						<td colspan="3" style="text-align:center"><b><?php echo $response->message?></b></td>
+						<td colspan="3" style="text-align:center"><h5><?php echo $response->message?></h5></td>
 					</tr>
 					<tr>
 
@@ -92,5 +94,6 @@
 			?>
 		</div>
 	</div>
+	<div class="clear"></div>
 
 

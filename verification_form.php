@@ -5,7 +5,7 @@ if(count($configuration)>0 && in_array  ('curl', get_loaded_extensions())){
 ?>
 <div class="main-form-plg photoid">
 	<div class="ivs-form1">
-	
+		<h5>Identity Document Verification</h5>
 		<div class="ivs-message alert-static"></div>
 		<div id="preview">
 			<img id="previewing" src="<?php echo plugins_url("noimage.png",__FILE__)?>" />
@@ -327,14 +327,15 @@ if(count($configuration)>0 && in_array  ('curl', get_loaded_extensions())){
 					
 					<div class="ivs-input">	
 						 <div id="share-bottom">
-	                        <button type="button" class="photo-button" onclick="document.getElementById('photo').click();"><p> Browse </p></button>
+	                        <button type="button" class="photo-button" onclick="document.getElementById('photo').click();"> Browse </button>
 	                        <div id="upload-wrap">
 	                            <input type="file" name="photo" id="photo"/>
 	                        </div>
 	                        
 	                    </div>
-						<span class="err err_photoid_url"></span>
-						<span style="font-size:11px;">(* Image Size Should be less than 2MB Size)</span>
+	                    <br/>
+						<p class="err err_photoid_url"></p>
+						<p style="font-size:11px;">(* Image Size Should be less than 2MB Size)</p>
 					</div>		
 					<div class="clear"></div>
 				</div>
@@ -361,5 +362,6 @@ if(count($configuration)>0 && in_array  ('curl', get_loaded_extensions())){
 ?>
 
 
-<div class="result" style="float:left">
+<div class="result main-form-plg photoid" >
 </div>
+<div class="clear"></div>

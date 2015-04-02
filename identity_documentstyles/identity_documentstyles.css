@@ -1,5 +1,5 @@
 .loader_image{position: ABSOLUTE;margin-top: -5%;margin-left: 15%}
-#verify_piv,.btn{background:#4b85b2 !important;color:#fff;border:1px solid;width:70px !important;cursor:pointer;float:right;border-radius: 5px;padding:3px;font-size: 14px;font-weight: bold}
+#verify_piv,.btn{cursor:pointer;float:right;border-radius: 5px;padding:3px;font-size: 14px;font-weight: normal;}
 #verify_piv{text-decoration: none;text-align: center;}
 .err{color:Red;}
 .ivs-inner-form{width:75%;float:left;}
@@ -138,25 +138,15 @@ body .ivs-bc .setting table.form-table tr td.td-btn{text-align: center;}
     width: 580px;
 }
 
-.photo-button {
-    cursor: pointer;
-    float: left;
-    margin: 0px 10px 0px 0px;
-    height: 30px;
-    width: 150px;
-    border: none;
-    border-radius: 4px 4px 4px 4px;
-    background-color: #608AB0;
-    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-}
+.main-form-plg.photoid .photo-button {
 
-.photo-button p {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    font-family: calibri;
-    font-size: 16px;
-    color: #fff;
-    line-height: 8px
+    font-size:100%;
+    width: auto!important;
+    min-width: 11   0px;
+    float: none;
+    margin: 15px 0px 0px 0px;
+    padding: 6px 25px;
+    font-weight: normal;
 }
 
 #upload-wrap {
@@ -177,12 +167,17 @@ body .ivs-bc .setting table.form-table tr td.td-btn{text-align: center;}
     color: #444;
 }
 
+.main-form-plg.photoid table.response-tbl{
+
+    width: auto!important;
+    margin: auto!important;
+}
 .main-form-plg.photoid .ivs-form1 {
             
             float: none !important;
-            margin: 50px auto;
+            max-width: 700px;
             padding: 20px;
-            width: 75%;
+            width: 100%;
         }
         
         .main-form-plg.photoid .plg-field{width: 50%;float: left;}
@@ -190,7 +185,13 @@ body .ivs-bc .setting table.form-table tr td.td-btn{text-align: center;}
         .main-form-plg.photoid #preview{text-align: center;}
         .main-form-plg.photoid #preview img{margin: 20px auto;border:1px solid #ddd;}
         .main-form-plg.photoid .plg-field-button{width: auto;float: left;}
-        .main-form-plg.photoid  #verify_piv,.main-form-plg.photoid  #verify_mcv{width: 125px!important;padding: 7px 25px;margin-left: 5px;}
+        .main-form-plg.photoid  #verify_piv,.main-form-plg.photoid  #verify_mcv{font-size:100%;
+    width: auto!important;
+    min-width: 11   0px;
+    float: none;
+    margin: 15px 0px 0px 0px;
+    padding: 6px 25px;
+    font-weight: normal;}
         .main-form-plg.photoid .plg-field .err_email{margin-top: 5px;display: block;font-style: italic;font-size: 12px;}
 
         .main-form-plg.photoid .resend-block{margin-top: 20px;font-size: 15px;line-height: 25px;}
@@ -217,3 +218,15 @@ body .ivs-bc .setting table.form-table tr td.td-btn{text-align: center;}
             .main-form-plg.photoid .ivs-form1{width: 100%;padding: 15px 10px;}
             .main-form-plg.photoid .ivs-inner-form{width: 85%!important;}
         }
+        .main-form-plg.photoid *{
+-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;
+
+}
+
+.text-right{text-align: right;}
+.text-center{text-align: center;}
+.clear{clear: both;}
+.ivs-input .err{ display: inline-block;
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 7px !important}

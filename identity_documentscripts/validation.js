@@ -3,6 +3,18 @@ jQuery(document).ready(function(){
 	
 	jQuery("#verify_identitydocument").on('submit',function(e) {
 		
+		
+		if(jQuery("#identity_type").val()==''){
+			jQuery("#identity_type").focus();
+			jQuery(".err_identity_type").text("Please Select Photo Id Type");
+			jQuery("#identity_type").css("border","1px solid red");
+			return false;
+		}
+		else{
+			jQuery(".err_identity_type").text("");
+			jQuery("#identity_type").css("border","1px solid #dfdfdf");	
+		}
+
 		if(jQuery("#region").val()==''){
 			jQuery("#region").focus();
 			jQuery(".err_region").text("Please Select Country");
@@ -14,16 +26,6 @@ jQuery(document).ready(function(){
 			jQuery("#region").css("border","1px solid #dfdfdf");	
 		}
 
-		if(jQuery("#identity_type").val()==''){
-			jQuery("#identity_type").focus();
-			jQuery(".err_identity_type").text("Please Select Photo Id Type");
-			jQuery("#identity_type").css("border","1px solid red");
-			return false;
-		}
-		else{
-			jQuery(".err_identity_type").text("");
-			jQuery("#identity_type").css("border","1px solid #dfdfdf");	
-		}
 		
 		if(jQuery("#photoid_url").val()=='' && jQuery("#photo").val()==''){
 			jQuery("#photoid_url").focus();
